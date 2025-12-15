@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{- if .Summary -}}
+<summary>{{ .Summary }}</summary>
+{{- end -}}
+
+<article>
+{{ .Content }}
+</article>
+
+{{ end }}

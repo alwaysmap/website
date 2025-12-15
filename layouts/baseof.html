@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ .Title }} | {{ .Site.Title }}</title>
+        {{- if .IsHome -}}
+        <meta name="description" content="{{ site.Params.Description }}" />
+        {{- else -}}
+        <meta name="description" content="{{ .Params.Summary }}" />
+        {{- end }}
+        {{ $siteCss := resources.Get "css/site.css" | fingerprint }}
+        <link rel="stylesheet" href="{{ $siteCss.RelPermalink }}" />
+    </head>
+    <body>
+        {{ partial "nav.html" . }}
+        <main id="main" role="main" aria-label="Main content">
+            {{ block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer.html" . }}
+    </body>
+</html>

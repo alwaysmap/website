@@ -1,0 +1,23 @@
+{{- define "main" -}}
+<div class="sitemapDiv">
+    <h1>Sitemap</h1>
+    <h2>Main pages</h2>
+    <ul>
+        <li><a href="/">Home page</a></li>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/contact">How to contact us</a></li>
+    </ul>
+
+    <h2>Articles</h2>
+    <ul>
+    {{- range where site.RegularPages "Type" "posts" -}}
+      <li>
+          <strong><a href="{{ .Permalink }}">{{ .Title | .Page.RenderString }}</a></strong>
+          {{- if .Summary -}}
+              <span class="summary">&mdash;{{ .Summary | .Page.RenderString }}</span>
+          {{- end -}}
+      </li>
+      {{- end -}}
+    </ul>
+</div>
+{{- end -}}
