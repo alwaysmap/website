@@ -1,6 +1,10 @@
 <nav>
     <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/posts/">Posts</a></li>
+        {{- with site.GetPage "_index.md" -}}
+        <li><a href="{{ .RelPermalink }}">Home</a></li>
+        {{- end -}}
+        {{- with site.GetPage "posts" -}}
+        <li><a href="{{ .RelPermalink }}">Updates</a></li>
+        {{- end -}}
     </ul>
 </nav>

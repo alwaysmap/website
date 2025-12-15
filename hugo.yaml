@@ -1,9 +1,9 @@
 baseURL: https://alwaysmap.com/
 languageCode: en-us
 title: AlwaysMap
+enableRobotsTXT: true
 params:
   description: "Use AlwaysMap to create online and print maps of life's journeys, for individuals, families, and friends."
-  enableRobotsTXT: true
 permalinks:
   page:
     posts: /articles/:year/:month/:slug/
