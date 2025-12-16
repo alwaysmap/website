@@ -3,7 +3,7 @@ languageCode: en-us
 title: AlwaysMap
 enableRobotsTXT: true
 params:
-  description: "Use AlwaysMap to create online and print maps of life's journeys, for individuals, families, and friends."
+  description: "Transform your life's journeys into museum-quality wall maps. Hand-crafted cartography for individuals, families, and heirlooms."
 permalinks:
   page:
     posts: /articles/:year/:month/:slug/

@@ -1,6 +1,101 @@
 {{- define "main" -}}
 
-<h1>{{ .Site.Title }}</h1>
-{{ .Content}}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="hero-tagline">Transform your life's journeys into a beautiful wall map—an heirloom to treasure and share.</p>
+
+    <div class="cta-group">
+      <a href="#features" class="btn btn-primary">Create Your Map</a>
+      <a href="{{ with site.GetPage "about" }}{{ .RelPermalink }}{{ end }}" class="btn btn-secondary">See Examples</a>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features" id="features">
+  <div class="container">
+    <h2>A Map Worth Hanging</h2>
+
+    <div class="features-grid">
+      <div class="feature-card feature-card-primary">
+        <span class="feature-icon">🖼️</span>
+        <h3>Museum-Quality Prints</h3>
+        <p>Archival paper, professional printing, and custom framing options. Your map is designed to last generations as a centerpiece in your home.</p>
+      </div>
+
+      <div class="feature-card feature-card-primary">
+        <span class="feature-icon">✒️</span>
+        <h3>Cartographic Excellence</h3>
+        <p>Hand-drawn aesthetic meets precision mapping. Choose from vintage, modern, or topographic styles—each crafted with meticulous attention to detail.</p>
+      </div>
+
+      <div class="feature-card feature-card-primary">
+        <span class="feature-icon">📍</span>
+        <h3>Your Story, Mapped</h3>
+        <p>Plot meaningful locations, routes, and timelines. Every pin tells a story, creating a visual narrative of your life's adventures.</p>
+      </div>
+
+      <div class="feature-card">
+        <span class="feature-icon">👥</span>
+        <h3>Family Heirlooms</h3>
+        <p>Create multi-generational maps showing family journeys, migrations, and connections. An heirloom that grows with your family's story.</p>
+      </div>
+
+      <div class="feature-card">
+        <span class="feature-icon">🎨</span>
+        <h3>Fully Customizable</h3>
+        <p>Control every detail—colors, fonts, borders, legends, and annotations. Your map reflects your unique aesthetic and story.</p>
+      </div>
+
+      <div class="feature-card">
+        <span class="feature-icon">💻</span>
+        <h3>Digital + Print</h3>
+        <p>Work digitally with our intuitive tools, then order professional prints. Keep digital versions for sharing and updates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+    <h2>Maps Worth Keeping</h2>
+
+    <div class="testimonials-grid">
+      <blockquote class="testimonial-card">
+        <p class="testimonial-quote">"Our family migration map hangs in the dining room. Three generations, four continents, one beautiful piece of art. Guests are always captivated by the stories behind each location."</p>
+        <footer class="testimonial-author">
+          <span class="author-name">Eleanor Hartwell</span>
+          <span class="author-title">Genealogist & Family Historian</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card">
+        <p class="testimonial-quote">"The print quality is exceptional—archival paper, rich colors, perfect detail. It looks like something from a rare book collection, but it's the story of our 50th anniversary travels."</p>
+        <footer class="testimonial-author">
+          <span class="author-name">Margaret & Thomas Chen</span>
+          <span class="author-title">World Travelers</span>
+        </footer>
+      </blockquote>
+
+      <blockquote class="testimonial-card">
+        <p class="testimonial-quote">"I commissioned maps of my historical novel's settings. The attention to cartographic detail is remarkable. They're both research tools and stunning wall pieces in my study."</p>
+        <footer class="testimonial-author">
+          <span class="author-name">James Morrison</span>
+          <span class="author-title">Historical Fiction Author</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- Optional: Display page content if any -->
+{{ if .Content }}
+<section class="page-content">
+  {{ .Content }}
+</section>
+{{ end }}
 
 {{- end -}}

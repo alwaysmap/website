@@ -1,11 +1,26 @@
-<ul>
-{{- with site.GetPage "sitemap" -}}
-<li><a href="{{ .RelPermalink }}">Sitemap</a></li>
-{{- end -}}
-{{- with site.GetPage "contact" -}}
-<li><a href="{{ .RelPermalink }}">Contact</a></li>
-{{- end -}}
-{{- with site.GetPage "about" -}}
-<li><a href="{{ .RelPermalink }}">About</a></li>
-{{- end -}}
-</ul>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>{{ .Site.Title }}</h3>
+                <p>{{ .Site.Params.Description }}</p>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    {{- with site.GetPage "about" -}}
+                    <li><a href="{{ .RelPermalink }}">About</a></li>
+                    {{- end -}}
+                    {{- with site.GetPage "contact" -}}
+                    <li><a href="{{ .RelPermalink }}">Contact</a></li>
+                    {{- end -}}
+                    {{- with site.GetPage "sitemap" -}}
+                    <li><a href="{{ .RelPermalink }}">Sitemap</a></li>
+                    {{- end -}}
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        </div>
+    </div>
+</footer>

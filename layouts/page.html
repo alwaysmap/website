@@ -1,8 +1,23 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
 <article>
-{{ .Content }}
+  <header class="page-header">
+    <div class="container-narrow">
+      <h1>{{ .Title }}</h1>
+      <div class="page-meta">
+        {{- if .Params.Author -}}
+        <span>By {{ .Params.Author }}</span>
+        {{- end -}}
+        {{- if .Date -}}
+        <span>{{ .Date.Format "January 2, 2006" }}</span>
+        {{- end -}}
+      </div>
+    </div>
+  </header>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
 </article>
 
 {{ end }}

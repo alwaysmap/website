@@ -1,12 +1,26 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
-{{- if .Summary -}}
-<summary>{{ .Summary }}</summary>
-{{- end -}}
-
 <article>
-{{ .Content }}
+  <header class="page-header">
+    <div class="container-narrow">
+      <h1>{{ .Title }}</h1>
+      {{- if .Summary -}}
+      <p style="margin-top: var(--space-md); color: var(--text-secondary); font-size: 1.125rem;">{{ .Summary }}</p>
+      {{- end -}}
+      <div class="page-meta">
+        {{ if .PublishDate }}
+        <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
+        {{ end }}
+        {{ if .Params.author }}
+        <span>By {{ .Params.author }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+
+  <div class="page-content">
+    {{ .Content }}
+  </div>
 </article>
 
 {{ end }}

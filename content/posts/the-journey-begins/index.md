@@ -4,7 +4,7 @@ draft: false
 title: Why AlwaysMap?
 author: Dylan
 summary: |-
-  The conversations and needs led us to the AlwaysMap idea.
+  The conversations and needs that led us to the AlwaysMap idea.
 ---
 
 - We like maps
