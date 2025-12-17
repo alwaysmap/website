@@ -24,9 +24,6 @@
     <article class="post-card">
       <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       <div class="post-meta">
-        {{ if .PublishDate }}
-        <span>{{ .PublishDate.Format "January 2, 2006" }}</span>
-        {{ end }}
         {{ if .Params.author }}
         <span> · By {{ .Params.author }}</span>
         {{ end }}
