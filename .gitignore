@@ -1,5 +1,6 @@
-public
-resources
-.zed
-.claude
+public/
+resources/
+.zed/
+.claude/
 .tool-versions
+.DS_Store

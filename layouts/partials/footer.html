@@ -1,26 +1,31 @@
 <footer class="site-footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>{{ .Site.Title }}</h3>
-                <p>{{ .Site.Params.Description }}</p>
-            </div>
-            <nav class="footer-nav">
-                <ul>
-                    {{- with site.GetPage "about" -}}
-                    <li><a href="{{ .RelPermalink }}">About</a></li>
-                    {{- end -}}
-                    {{- with site.GetPage "contact" -}}
-                    <li><a href="{{ .RelPermalink }}">Contact</a></li>
-                    {{- end -}}
-                    {{- with site.GetPage "sitemap" -}}
-                    <li><a href="{{ .RelPermalink }}">Sitemap</a></li>
-                    {{- end -}}
-                </ul>
-            </nav>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>{{ .Site.Title }}</h3>
+            <p>{{ .Site.Params.Description }}</p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; {{ now.Year }} {{ .Site.Title }}. All rights reserved.</p>
+        <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+                {{- with site.GetPage "_index.md" -}}
+                <li><a href="{{ .RelPermalink }}">Home</a></li>
+                {{- end -}}
+                {{- with site.GetPage "about" -}}
+                <li><a href="{{ .RelPermalink }}">About</a></li>
+                {{- end -}}
+                {{- with site.GetPage "contact" -}}
+                <li><a href="{{ .RelPermalink }}">Contact</a></li>
+                {{- end -}}
+            </ul>
         </div>
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="mailto:contact@alwaysmap.com">contact@alwaysmap.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; {{ now.Year }} {{ .Site.Title }} LLC. All rights reserved.</p>
     </div>
 </footer>

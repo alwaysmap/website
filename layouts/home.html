@@ -2,100 +2,70 @@
 
 <!-- Hero Section -->
 <section class="hero">
-  <div class="hero-content">
+  <div class="hero-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="80" height="80">
+      <rect width="64" height="64" rx="14" fill="hsla(72, 58%, 48%, 1)"/>
+      <path d="M 14,46 C 22,14 42,50 50,18" stroke="white" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+      <circle cx="14" cy="46" r="6.5" fill="white"/>
+      <circle cx="50" cy="18" r="6.5" fill="hsla(8, 80%, 52%, 1)"/>
+    </svg>
+  </div>
+  <div class="container">
     <h1>{{ .Site.Title }}</h1>
-    <p class="hero-tagline">Transform your life's journeys into a beautiful wall map—an heirloom to treasure and share.</p>
+    <p>Shift from current operational challenges to a clearer, simpler future for your tech-centric organization.
+        Start with the <span class="awm-red">destination you want</span> and map the path to <span class="awm-pear">meaningful change.</span></p>
 
-    <div class="cta-group">
-      <a href="#features" class="btn btn-primary">Create Your Map</a>
-      <a href="{{ with site.GetPage "about" }}{{ .RelPermalink }}{{ end }}" class="btn btn-secondary">See Examples</a>
+    <div class="hero-cta">
+      <a href="{{ with site.GetPage "contact" }}{{ .RelPermalink }}{{ end }}" class="btn btn-primary">Get in Touch</a>
+      <a href="{{ with site.GetPage "about" }}{{ .RelPermalink }}{{ end }}" class="btn btn-secondary">Learn More</a>
     </div>
   </div>
 </section>
 
-<!-- Features Section -->
-<section class="features" id="features">
+<!-- Services Section -->
+<section class="services">
   <div class="container">
-    <h2>A Map Worth Hanging</h2>
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>At AlwaysMap we apply what we've learned in <strong>software and technology-centric companies</strong> of all sizes to your unique operational, program, and team challenges.</p>
+      <p>Do you own or lead a tech-centric organization or company?
+          Are you feeling <strong>slowed down by operational friction</strong>? Do key initiatives keep <strong>failing to produce value</strong>?
+          Have great individual talent but <strong>teams that aren't aligned</strong>?</p>
+      <p>That's where we come in. Mapping the path from todays challenges to a more predictable, less stressful operational future.</p>
+    </div>
 
-    <div class="features-grid">
-      <div class="feature-card feature-card-primary">
-        <span class="feature-icon">🖼️</span>
-        <h3>Museum-Quality Prints</h3>
-        <p>Archival paper, professional printing, and custom framing options. Your map is designed to last generations as a centerpiece in your home.</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+          </svg>
+        </div>
+        <h3>Operations</h3>
+        <p>When your company is scaling and everything starts breaking, we help you build processes that work without requiring constant heroics.</p>
       </div>
 
-      <div class="feature-card feature-card-primary">
-        <span class="feature-icon">✒️</span>
-        <h3>Cartographic Excellence</h3>
-        <p>Hand-drawn aesthetic meets precision mapping. Choose from vintage, modern, or topographic styles—each crafted with meticulous attention to detail.</p>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h3>Programs</h3>
+        <p>Complex programs with lots of moving parts need clear plans and clear execution. We make sure they actually ship.</p>
       </div>
 
-      <div class="feature-card feature-card-primary">
-        <span class="feature-icon">📍</span>
-        <h3>Your Story, Mapped</h3>
-        <p>Plot meaningful locations, routes, and timelines. Every pin tells a story, creating a visual narrative of your life's adventures.</p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">👥</span>
-        <h3>Family Heirlooms</h3>
-        <p>Create multi-generational maps showing family journeys, migrations, and connections. An heirloom that grows with your family's story.</p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">🎨</span>
-        <h3>Fully Customizable</h3>
-        <p>Control every detail—colors, fonts, borders, legends, and annotations. Your map reflects your unique aesthetic and story.</p>
-      </div>
-
-      <div class="feature-card">
-        <span class="feature-icon">💻</span>
-        <h3>Digital + Print</h3>
-        <p>Work digitally with our intuitive tools, then order professional prints. Keep digital versions for sharing and updates.</p>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <h3>Teams</h3>
+        <p>Building teams that work well together requires structure that enables people rather than slowing them down. We help you get that balance right.</p>
       </div>
     </div>
   </div>
 </section>
-
-<!-- Testimonials Section -->
-<section class="testimonials">
-  <div class="container">
-    <h2>Maps Worth Keeping</h2>
-
-    <div class="testimonials-grid">
-      <blockquote class="testimonial-card">
-        <p class="testimonial-quote">"Our family migration map hangs in the dining room. Three generations, four continents, one beautiful piece of art. Guests are always captivated by the stories behind each location."</p>
-        <footer class="testimonial-author">
-          <span class="author-name">Eleanor Hartwell</span>
-          <span class="author-title">Genealogist & Family Historian</span>
-        </footer>
-      </blockquote>
-
-      <blockquote class="testimonial-card">
-        <p class="testimonial-quote">"The print quality is exceptional—archival paper, rich colors, perfect detail. It looks like something from a rare book collection, but it's the story of our 50th anniversary travels."</p>
-        <footer class="testimonial-author">
-          <span class="author-name">Margaret & Thomas Chen</span>
-          <span class="author-title">World Travelers</span>
-        </footer>
-      </blockquote>
-
-      <blockquote class="testimonial-card">
-        <p class="testimonial-quote">"I commissioned maps of my historical novel's settings. The attention to cartographic detail is remarkable. They're both research tools and stunning wall pieces in my study."</p>
-        <footer class="testimonial-author">
-          <span class="author-name">James Morrison</span>
-          <span class="author-title">Historical Fiction Author</span>
-        </footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- Optional: Display page content if any -->
-{{ if .Content }}
-<section class="page-content">
-  {{ .Content }}
-</section>
-{{ end }}
 
 {{- end -}}

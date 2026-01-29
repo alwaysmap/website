@@ -3,9 +3,8 @@ languageCode: en-us
 title: AlwaysMap
 enableRobotsTXT: true
 params:
-  description: "Transform your life's journeys into museum-quality wall maps. Hand-crafted cartography for individuals, families, and heirlooms."
-permalinks:
-  page:
-    posts: /articles/:year/:month/:slug/
-  section:
-    posts: /articles/
+  description: "Start with the destination you want and map the path to meaningful change."
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
