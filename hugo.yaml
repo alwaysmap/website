@@ -4,6 +4,7 @@ title: AlwaysMap
 enableRobotsTXT: true
 params:
   description: "Start with the destination you want and map the path to meaningful change."
+  ogImage: /og-image.png
 markup:
   goldmark:
     renderer:
