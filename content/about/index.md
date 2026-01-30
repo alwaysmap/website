@@ -6,12 +6,12 @@ summary: "I help tech companies run better. Operations, programs, and teams that
 
 ## People First, Then the Machines
 
-I'm Dylan Thomas, and I help tech companies run better.
+I'm Dylan Thomas, owner of AlwaysMaps, and I help tech companies run better.
 
 The technology is hard enough, but if you're not solving a problem **for people, with people**, you're not doing it right.
-That principle has guided my entire career from geospatial technology to leading operations at some of the world's biggest tech companies.
+That people-first principle has guided my entire career, from implementing geospatial technology to leading operations teams at some of the world's biggest tech companies.
 
-## What I've Built
+## Experience Matters
 
 <span class="brand-highlight"><strong>Operations at scale</strong></span> — I built customer success programs at **Google Maps**, built a consulting and engineering team from scratch at Woolpert, and led in GitHub's EPD operations as it scaled.
 The lesson I learned: repeatable processes beat heroics every time.
@@ -27,8 +27,8 @@ Professional services can scale if you set them up right.
 
 ## What I Do Now
 
-I help tech companies with three things: fixing operations that are breaking as you scale; shipping complex programs and initiatives with clarity and honesty; and building teams that can deliver value.
+I help tech companies with three things: fixing operations that are breaking with scale; shipping complex programs and initiatives with clarity and honesty; and building teams that can deliver value.
 
 I bring experience from Google, Microsoft, GitHub, and other companies where I've seen what works at scale and what doesn't.
 
-Email me at [contact@alwaysmap.com](mailto:contact@alwaysmap.com).
+[Get started](/contact).

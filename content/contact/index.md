@@ -6,13 +6,10 @@ summary: "Let's talk about your operations, programs, or team challenges."
 
 ## Let's Talk
 
-Whether you have an operations problem, need help shipping a complex program, or want to build a team that works, I'd like to hear about it.
+Whether you have an operations problem, need help shipping a complex program, or want to build a team that works, we'd like to help.
 
-<div class="contact-info">
-  <h2>Get In Touch</h2>
-  <a href="mailto:contact@alwaysmap.com" class="contact-email">contact@alwaysmap.com</a>
-</div>
+* [Book an introductory call](https://calendar.app.google/DYJySyaPrE8epUEF8")
+* [Send a message on LinkedIn](https://www.linkedin.com/in/dylan-thomas/)
+* [Send an email](mailto:contact@alwaysmap.com?subject=AlwaysMap%20Inquiry)
 
-## What Helps
-
-Tell me about your company, the challenge you're facing, and what you're trying to accomplish. If you have a timeline in mind, mention it—but if you don't, that's fine too.
+Tell us about your company, the challenge you're facing, and what you're trying to accomplish, and if you have a timeline or deadline.
